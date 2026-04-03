@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media & Resources | Dtuned Insight</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#0A192F', secondary: '#112240', tertiary: '#233554', accent: '#64FFDA', txt: '#8892B0', 'txt-light': '#CCD6F6' }, fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-primary text-txt antialiased font-sans">
+    
+    <nav class="fixed w-full z-50 bg-primary/95 backdrop-blur shadow-md py-4 border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4"><div class="flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-accent">Dtuned<span class="text-txt-light">Insight</span></a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-txt-light hover:text-accent text-sm">Home</a>
+                <a href="services.html" class="text-txt-light hover:text-accent text-sm">Services</a>
+                <a href="projects.html" class="text-txt-light hover:text-accent text-sm">Projects</a>
+                <a href="blog.html" class="text-txt-light hover:text-accent text-sm">Insights</a>
+                <a href="media.html" class="text-accent text-sm">Media</a>
+                <a href="about.html" class="text-txt-light hover:text-accent text-sm">About</a>
+                <a href="contact.html" class="px-5 py-2 border border-accent text-accent rounded hover:bg-accent text-sm">Contact</a>
+            </div>
+        </div></div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-40 pb-20 bg-secondary border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-txt-light mb-4">Media & Resources</h1>
+            <p class="text-lg text-txt max-w-2xl mx-auto">Product catalogs, webinar recordings, and official corporate assets.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-24 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+            
+            <!-- Video Section -->
+            <div>
+                <h2 class="text-2xl font-bold text-txt-light border-l-4 border-accent pl-4 mb-8">Webinars & Presentations</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-secondary p-4 rounded-lg border border-tertiary">
+                        <div class="aspect-video bg-primary flex items-center justify-center rounded border border-tertiary relative group cursor-pointer overflow-hidden">
+                            <img src="images/hero_bg_1775205745157.png" class="w-full h-full object-cover opacity-50 transition duration-500 group-hover:scale-105 group-hover:opacity-70">
+                            <i class="ph-fill ph-play-circle text-6xl text-accent absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:text-white transition"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-txt-light mt-4">State of AI in Finance 2026</h3>
+                        <p class="text-sm text-txt mt-2">Watch our CEO discuss upcoming trends in algorithmic trading architectures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDF/Catalogs Section -->
+            <div>
+                <h2 class="text-2xl font-bold text-txt-light border-l-4 border-accent pl-4 mb-8">Downloadable Catalogs & Whitepapers</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="flex items-start gap-4 p-6 bg-secondary rounded-lg border border-tertiary hover:border-accent transition group">
+                        <div class="p-3 bg-primary rounded-lg text-accent">
+                            <i class="ph ph-file-pdf text-3xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-txt-light font-bold mb-1 group-hover:text-accent transition">Services Overview 2026</h4>
+                            <p class="text-xs text-txt mb-3">Comprehensive breakdown of all technical capabilities. (2.4MB)</p>
+                            <button class="text-xs font-bold text-accent px-3 py-1 border border-accent rounded hover:bg-accent hover:text-primary transition">Download</button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-6 bg-secondary rounded-lg border border-tertiary hover:border-accent transition group">
+                        <div class="p-3 bg-primary rounded-lg text-accent">
+                            <i class="ph ph-file-pdf text-3xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-txt-light font-bold mb-1 group-hover:text-accent transition">Whitepaper: Data Pipelines</h4>
+                            <p class="text-xs text-txt mb-3">Best practices for structuring modern ELT pipelines. (4.1MB)</p>
+                            <button class="text-xs font-bold text-accent px-3 py-1 border border-accent rounded hover:bg-accent hover:text-primary transition">Download</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

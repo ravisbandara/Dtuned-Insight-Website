@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Dtuned Insight</title>
+    <meta name="description" content="Explore Dtuned Insight's key services, including predictive analytics, ML solutions, data visualization, and AI automation.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A192F',
+                        secondary: '#112240',
+                        tertiary: '#233554',
+                        accent: '#64FFDA',
+                        txt: '#8892B0',
+                        'txt-light': '#CCD6F6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-primary text-txt antialiased font-sans">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-primary/95 backdrop-blur shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] py-4 border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-accent tracking-tighter">Dtuned<span class="text-txt-light">Insight</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-txt-light hover:text-accent text-sm font-medium transition">Home</a>
+                    <a href="services.html" class="text-accent text-sm font-medium transition">Services</a>
+                    <a href="projects.html" class="text-txt-light hover:text-accent text-sm font-medium transition">Projects</a>
+                    <a href="blog.html" class="text-txt-light hover:text-accent text-sm font-medium transition">Insights</a>
+                    <a href="media.html" class="text-txt-light hover:text-accent text-sm font-medium transition">Media</a>
+                    <a href="about.html" class="text-txt-light hover:text-accent text-sm font-medium transition">About</a>
+                    <a href="contact.html" class="px-5 py-2 border border-accent text-accent rounded hover:bg-accent hover:text-primary transition-all duration-300 text-sm font-medium">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-txt-light hover:text-accent focus:outline-none">
+                        <i class="ph ph-list text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary border-t border-tertiary">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center flex flex-col">
+                <a href="index.html" class="text-txt-light block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="services.html" class="text-accent block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="projects.html" class="text-txt-light block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="blog.html" class="text-txt-light block px-3 py-2 rounded-md text-base font-medium">Insights</a>
+                <a href="media.html" class="text-txt-light block px-3 py-2 rounded-md text-base font-medium">Media</a>
+                <a href="about.html" class="text-txt-light block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="contact.html" class="text-accent block px-3 py-2 mt-4 rounded border border-accent">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-40 pb-20 bg-secondary border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-on-scroll">
+            <h1 class="text-4xl md:text-6xl font-bold text-txt-light mb-6">Our Services</h1>
+            <p class="text-lg text-txt max-w-2xl mx-auto">
+                Comprehensive data solutions engineered to decode complexity, streamline operations, and catalyze your business momentum.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <section class="py-24 bg-primary space-y-32">
+        
+        <!-- Service 1: Predictive Analytics -->
+        <div id="predictive" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-2xl md:text-4xl font-bold text-txt-light mb-4">Predictive Analytics</h2>
+                    <p class="text-txt mb-6 text-lg">
+                        Anticipate the future by understanding the past. We utilize big data and statistical algorithms to identify the likelihood of future outcomes based on historical data.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-accent text-xl mt-0.5"></i>
+                            <span class="text-txt">Demand Forecasting & Supply Chain Optimization</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-accent text-xl mt-0.5"></i>
+                            <span class="text-txt">Customer Churn Prediction & Retention Framing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-accent text-xl mt-0.5"></i>
+                            <span class="text-txt">Financial Risk Modeling & Fraud Detection</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="px-6 py-3 border border-accent text-accent rounded hover:bg-accent hover:text-primary transition-all font-medium inline-block">Request Consultation</a>
+                </div>
+                <div class="w-full md:w-1/2 order-1 md:order-2">
+                    <div class="img-wrapper rounded-lg shadow-xl shadow-accent/5">
+                        <img src="images/service_predictive_1775205789223.png" alt="Predictive Analytics" class="w-full h-auto object-cover border border-tertiary rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Machine Learning -->
+        <div id="ml" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <div class="flex flex-col md:flex-row-reverse gap-16 items-center">
+                <div class="w-full md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-2xl md:text-4xl font-bold text-txt-light mb-4">Machine Learning Solutions</h2>
+                    <p class="text-txt mb-6 text-lg">
+                        Empower your systems to learn and adapt without explicit programming. We build bespoke ML architectures customized to solve unique enterprise logic and scalability challenges.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-accent text-xl mt-0.5"></i>
+                            <span class="text-txt">Natural Language Processing (NLP) & GenAI Integrations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-accent text-xl mt-0.5"></i>
+                            <span class="text-txt">Computer Vision & Automated Quality Analysis</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-accent text-xl mt-0.5"></i>
+                            <span class="text-txt">Recommendation Engines & Hyper-personalization</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="px-6 py-3 border border-accent text-accent rounded hover:bg-accent hover:text-primary transition-all font-medium inline-block">Request Consultation</a>
+                </div>
+                <div class="w-full md:w-1/2 order-1 md:order-2">
+                    <div class="img-wrapper rounded-lg shadow-xl shadow-accent/5">
+                        <img src="images/service_ml_1775205810186.png" alt="Machine Learning" class="w-full h-auto object-cover border border-tertiary rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Service 3: Visualisation -->
+        <div id="visualization" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-2xl md:text-4xl font-bold text-txt-light mb-4">Interactive Data Visualization</h2>
+                    <p class="text-txt mb-6 text-lg">
+                        Turn raw metrics into visual stories. We deploy enterprise-grade BI dashboards that provide holistic, real-time overviews, enabling definitive management action.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-accent text-xl mt-0.5"></i>
+                            <span class="text-txt">Executive & Departmental KPI Dashboards</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-accent text-xl mt-0.5"></i>
+                            <span class="text-txt">Real-time Data Streaming Views</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph ph-check-circle text-accent text-xl mt-0.5"></i>
+                            <span class="text-txt">Custom Integrations (Tableau, PowerBI, D3.js)</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="px-6 py-3 border border-accent text-accent rounded hover:bg-accent hover:text-primary transition-all font-medium inline-block">Request Consultation</a>
+                </div>
+                <div class="w-full md:w-1/2 order-1 md:order-2">
+                    <div class="img-wrapper rounded-lg shadow-xl shadow-accent/5">
+                        <img src="images/project_thumbnail_1775205838799.png" alt="Data Visualization" class="w-full h-auto object-cover border border-tertiary rounded-lg mix-blend-lighten opacity-80">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer placeholder to save space here, identical structured to index -->
+    <footer class="bg-secondary border-t border-tertiary py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-txt text-xs">&copy; 2026 Dtuned Insight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

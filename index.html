@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dtuned Insight | Modern Data Science Solutions</title>
+    <meta name="description" content="Dtuned Insight provides professional, high-performance business, predictive analytics, and machine learning solutions to drive your business forward.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A192F',
+                        secondary: '#112240',
+                        tertiary: '#233554',
+                        accent: '#64FFDA',
+                        txt: '#8892B0',
+                        'txt-light': '#CCD6F6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-primary text-txt antialiased font-sans">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-accent tracking-tighter">Dtuned<span class="text-txt-light">Insight</span></a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-accent text-sm font-medium hover:text-accent transition">Home</a>
+                    <a href="services.html" class="text-txt-light hover:text-accent text-sm font-medium transition">Services</a>
+                    <a href="projects.html" class="text-txt-light hover:text-accent text-sm font-medium transition">Projects</a>
+                    <a href="blog.html" class="text-txt-light hover:text-accent text-sm font-medium transition">Insights</a>
+                    <a href="media.html" class="text-txt-light hover:text-accent text-sm font-medium transition">Media</a>
+                    <a href="about.html" class="text-txt-light hover:text-accent text-sm font-medium transition">About</a>
+                    <a href="contact.html" class="px-5 py-2 border border-accent text-accent rounded hover:bg-accent hover:text-primary transition-all duration-300 glow-effect text-sm font-medium">Contact Us</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-txt-light hover:text-accent focus:outline-none">
+                        <i class="ph ph-list text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary border-t border-tertiary">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center flex flex-col">
+                <a href="index.html" class="text-accent block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="services.html" class="text-txt-light hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="projects.html" class="text-txt-light hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="blog.html" class="text-txt-light hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Insights</a>
+                <a href="media.html" class="text-txt-light hover:text-accent block px-3 py-2 rounded-md text-base font-medium">Media</a>
+                <a href="about.html" class="text-txt-light hover:text-accent block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="contact.html" class="text-accent block px-3 py-2 mt-4 rounded border border-accent">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden hero-wrapper min-h-screen flex items-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-[-2]">
+            <img src="images/hero_bg_1775205745157.png" alt="Data Science Background" class="w-full h-full object-cover object-center opacity-40">
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full animate-on-scroll">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-bold text-txt-light leading-tight mb-6">
+                        Unlock the power of <br>
+                        <span class="text-gradient">Data Intelligence</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-txt mb-8 max-w-lg">
+                        Transforming complex data into actionable strategies. We build scalable AI and predictive solutions engineered for business growth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="services.html" class="text-center px-8 py-3 bg-accent text-primary font-semibold rounded hover:bg-white transition-all glow-effect">
+                            Explore Services
+                        </a>
+                        <a href="contact.html" class="text-center px-8 py-3 border border-txt-light text-txt-light font-semibold rounded hover:border-accent hover:text-accent transition-all">
+                            Consult with an Expert
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Partners / Tech Stack Strip -->
+    <section class="py-10 bg-secondary border-y border-tertiary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm uppercase tracking-widest text-txt mb-6">Technologies we master</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70">
+                <div class="flex items-center gap-2"><i class="ph ph-file-sql text-3xl"></i><span class="font-medium">SQL & Databases</span></div>
+                <div class="flex items-center gap-2"><i class="ph ph-chart-line-up text-3xl"></i><span class="font-medium">Tableau / PowerBI</span></div>
+                <div class="flex items-center gap-2"><i class="ph ph-brain text-3xl"></i><span class="font-medium">TensorFlow & PyTorch</span></div>
+                <div class="flex items-center gap-2"><i class="ph ph-cloud-arrow-up text-3xl"></i><span class="font-medium">AWS / GCP / Azure</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Segments We Cater -->
+    <section class="py-16 bg-primary border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <div class="text-center mb-10">
+                <h2 class="text-sm text-accent font-mono tracking-widest mb-2 uppercase">Industries We Empower</h2>
+                <h3 class="text-2xl md:text-3xl font-bold text-txt-light">Tailored Solutions for Every Sector</h3>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 border border-tertiary rounded-lg bg-secondary hover-lift flex flex-col items-center justify-center">
+                    <i class="ph ph-bank text-4xl text-accent mb-3"></i>
+                    <h4 class="text-txt-light font-bold text-sm">Finance & FinTech</h4>
+                </div>
+                <div class="p-6 border border-tertiary rounded-lg bg-secondary hover-lift flex flex-col items-center justify-center">
+                    <i class="ph ph-shopping-cart text-4xl text-accent mb-3"></i>
+                    <h4 class="text-txt-light font-bold text-sm">Retail & E-commerce</h4>
+                </div>
+                <div class="p-6 border border-tertiary rounded-lg bg-secondary hover-lift flex flex-col items-center justify-center">
+                    <i class="ph ph-heartbeat text-4xl text-accent mb-3"></i>
+                    <h4 class="text-txt-light font-bold text-sm">Healthcare & MedTech</h4>
+                </div>
+                <div class="p-6 border border-tertiary rounded-lg bg-secondary hover-lift flex flex-col items-center justify-center">
+                    <i class="ph ph-factory text-4xl text-accent mb-3"></i>
+                    <h4 class="text-txt-light font-bold text-sm">Manufacturing & Logistics</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brief About Us -->
+    <section class="py-24 bg-primary relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2 relative">
+                    <div class="img-wrapper rounded-lg shadow-2xl border border-tertiary relative z-10 hover-lift">
+                        <img src="images/project_thumbnail_1775205838799.png" alt="Dtuned Insight Analytics" class="w-full h-auto object-cover opacity-90 mix-blend-lighten">
+                    </div>
+                    <!-- Decorative element -->
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-accent rounded z-0 opacity-50"></div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-sm text-accent font-mono tracking-widest mb-2 uppercase">Who we are</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-txt-light mb-6">Pioneering Data-Driven Innovation</h3>
+                    <p class="text-txt mb-6">
+                        At Dtuned Insight, we bridge the gap between raw data and measurable business impact. Our team of seasoned data scientists, engineers, and strategists are dedicated to architecting solutions that solve complex challenges and uncover hidden opportunities.
+                    </p>
+                    <p class="text-txt mb-8">
+                        Whether it's deploying advanced machine learning models or designing intuitive real-time dashboards, we deliver excellence at every stage of the data lifecycle.
+                    </p>
+                    <a href="about.html" class="inline-flex items-center gap-2 text-accent hover:text-white transition font-medium">
+                        Learn more about our mission <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Services Overview -->
+    <section class="py-24 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-sm text-accent font-mono tracking-widest mb-2 uppercase">What we do</h2>
+                <h3 class="text-3xl md:text-5xl font-bold text-txt-light">Our Core Expertise</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-primary border border-tertiary p-8 rounded-lg hover-lift animate-on-scroll">
+                    <div class="w-12 h-12 bg-secondary rounded flex items-center justify-center mb-6 text-accent">
+                        <i class="ph ph-trend-up text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-txt-light mb-3">Predictive Analytics</h4>
+                    <p class="text-txt text-sm leading-relaxed mb-6">
+                        Leverage historical data to forecast trends, customer behaviors, and market shifts with high-accuracy models.
+                    </p>
+                    <a href="services.html#predictive" class="text-sm text-accent py-2 border-b border-transparent hover:border-accent transition inline-block">Read More</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-primary border border-tertiary p-8 rounded-lg hover-lift animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-secondary rounded flex items-center justify-center mb-6 text-accent">
+                        <i class="ph ph-brain text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-txt-light mb-3">Machine Learning Solutions</h4>
+                    <p class="text-txt text-sm leading-relaxed mb-6">
+                        Custom algorithms designed to automate decision-making processes, optimize operations, and enhance customer experiences.
+                    </p>
+                    <a href="services.html#ml" class="text-sm text-accent py-2 border-b border-transparent hover:border-accent transition inline-block">Read More</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-primary border border-tertiary p-8 rounded-lg hover-lift animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-secondary rounded flex items-center justify-center mb-6 text-accent">
+                        <i class="ph ph-chart-polar text-3xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-txt-light mb-3">Data Visualization</h4>
+                    <p class="text-txt text-sm leading-relaxed mb-6">
+                        Interactive, real-time dashboards that turn complex datasets into intuitive, digestible visual narratives for leadership.
+                    </p>
+                    <a href="services.html#visualization" class="text-sm text-accent py-2 border-b border-transparent hover:border-accent transition inline-block">Read More</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="services.html" class="px-6 py-3 border border-accent text-accent rounded hover:bg-accent hover:text-primary transition-all font-medium inline-block">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-primary relative border-t border-tertiary">
+        <div class="max-w-4xl mx-auto px-4 text-center animate-on-scroll z-10 relative">
+            <h2 class="text-4xl md:text-5xl font-bold text-txt-light mb-6">Ready to scale securely?</h2>
+            <p class="text-lg text-txt mb-10 max-w-2xl mx-auto">
+                Connect with our experts today and discover how data intelligence can propel your organization ahead of the competition.
+            </p>
+            <a href="contact.html" class="px-8 py-4 bg-accent text-primary font-bold rounded shadow-[0_0_20px_rgba(100,255,218,0.4)] hover:shadow-[0_0_30px_rgba(100,255,218,0.6)] transition-all transform hover:-translate-y-1 inline-block">
+                Start a Conversation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary border-t border-tertiary pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Branding -->
+                <div class="md:col-span-1">
+                    <a href="index.html" class="text-2xl font-bold text-accent tracking-tighter block mb-4">Dtuned<span class="text-txt-light">Insight</span></a>
+                    <p class="text-txt text-sm mb-6">Delivering precision, performance, and strategic advantage through advanced data science.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/dtunedinsight/posts?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BnQHfAawLT%2FuQ06L%2BtvuqYg%3D%3D" target="_blank" class="text-txt hover:text-accent transition"><i class="ph ph-linkedin-logo text-2xl"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61580055239453" target="_blank" class="text-txt hover:text-accent transition"><i class="ph ph-facebook-logo text-2xl"></i></a>
+                        <a href="#" target="_blank" class="text-txt hover:text-accent transition"><i class="ph ph-instagram-logo text-2xl"></i></a>
+                        <a href="https://www.tiktok.com/@dtunedinsight?is_from_webapp=1&sender_device=pc" target="_blank" class="text-txt hover:text-accent transition"><i class="ph ph-tiktok-logo text-2xl"></i></a>
+                    </div>
+                </div>
+                <!-- Nav Links -->
+                <div>
+                    <h5 class="text-txt-light font-semibold mb-4">Company</h5>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-txt text-sm hover:text-accent transition">About Us</a></li>
+                        <li><a href="projects.html" class="text-txt text-sm hover:text-accent transition">Case Studies</a></li>
+                        <li><a href="blog.html" class="text-txt text-sm hover:text-accent transition">Insights & Blog</a></li>
+                        <li><a href="media.html" class="text-txt text-sm hover:text-accent transition">Media Center</a></li>
+                        <li><a href="contact.html" class="text-txt text-sm hover:text-accent transition">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div>
+                    <h5 class="text-txt-light font-semibold mb-4">Services</h5>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-txt text-sm hover:text-accent transition">Predictive Analytics</a></li>
+                        <li><a href="services.html" class="text-txt text-sm hover:text-accent transition">Machine Learning</a></li>
+                        <li><a href="services.html" class="text-txt text-sm hover:text-accent transition">Data Visualization</a></li>
+                        <li><a href="services.html" class="text-txt text-sm hover:text-accent transition">AI Automation</a></li>
+                    </ul>
+                </div>
+                <!-- Contact info -->
+                <div>
+                    <h5 class="text-txt-light font-semibold mb-4">Contact</h5>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-txt text-sm">
+                            <i class="ph ph-map-pin text-accent text-lg mt-0.5"></i>
+                            <span>Colombo,<br>Sri Lanka</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-txt text-sm">
+                            <i class="ph ph-phone text-accent text-lg mt-0.5"></i>
+                            <div class="flex flex-col gap-1">
+                                <a href="tel:+94717113359" class="hover:text-accent transition">+94 717113359 (Call)</a>
+                                <a href="https://wa.me/94761983885" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition flex items-center gap-1"><i class="ph ph-whatsapp-logo"></i> WhatsApp Message</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 text-txt text-sm mt-4">
+                            <i class="ph ph-envelope text-accent text-lg mt-0.5"></i>
+                            <div class="flex flex-col">
+                                <a href="mailto:dtunedinsight@gmail.com" class="hover:text-accent transition">dtunedinsight@gmail.com</a>
+                               
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-tertiary pt-8 text-center sm:flex sm:justify-between sm:text-left">
+                <p class="text-txt text-xs">&copy; 2026 Dtuned Insight. All rights reserved.</p>
+                <div class="mt-4 sm:mt-0 space-x-4">
+                    <a href="#" class="text-txt text-xs hover:text-accent">Privacy Policy</a>
+                    <a href="#" class="text-txt text-xs hover:text-accent">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

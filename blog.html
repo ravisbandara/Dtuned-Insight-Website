@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insights | Dtuned Insight</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#0A192F', secondary: '#112240', tertiary: '#233554', accent: '#64FFDA', txt: '#8892B0', 'txt-light': '#CCD6F6' }, fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-primary text-txt antialiased font-sans">
+    
+    <!-- Navbar Setup -->
+    <nav class="fixed w-full z-50 bg-primary/95 backdrop-blur shadow-md py-4 border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4"><div class="flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-accent">Dtuned<span class="text-txt-light">Insight</span></a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-txt-light hover:text-accent text-sm">Home</a>
+                <a href="services.html" class="text-txt-light hover:text-accent text-sm">Services</a>
+                <a href="projects.html" class="text-txt-light hover:text-accent text-sm">Projects</a>
+                <a href="blog.html" class="text-accent text-sm">Insights</a>
+                <a href="media.html" class="text-txt-light hover:text-accent text-sm">Media</a>
+                <a href="about.html" class="text-txt-light hover:text-accent text-sm">About</a>
+                <a href="contact.html" class="px-5 py-2 border border-accent text-accent rounded hover:bg-accent hover:text-primary text-sm">Contact Us</a>
+            </div>
+        </div></div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-40 pb-20 bg-secondary border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-txt-light mb-4">Insights & Thoughts</h1>
+            <p class="text-lg text-txt max-w-2xl mx-auto">Latest trends, data science tips, and industry updates from our experts.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="py-24 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center mb-12">
+                <div class="flex gap-4 overflow-x-auto pb-2">
+                    <button class="px-4 py-2 bg-accent text-primary text-xs font-bold rounded whitespace-nowrap">All Topics</button>
+                    <button class="px-4 py-2 border border-tertiary text-txt-light text-xs font-bold rounded whitespace-nowrap hover:border-accent">AI Research</button>
+                    <button class="px-4 py-2 border border-tertiary text-txt-light text-xs font-bold rounded whitespace-nowrap hover:border-accent">Data Strategy</button>
+                    <button class="px-4 py-2 border border-tertiary text-txt-light text-xs font-bold rounded whitespace-nowrap hover:border-accent">Engineering</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-secondary rounded-lg overflow-hidden border border-tertiary hover-lift flex flex-col">
+                    <div class="h-48 bg-primary relative border-b border-tertiary flex items-center justify-center">
+                        <i class="ph ph-brain text-6xl text-accent opacity-50"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs text-accent font-mono">Data Strategy</span>
+                            <span class="text-xs text-txt">April 12, 2026</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-txt-light mb-3 hover:text-accent cursor-pointer transition">Navigating the LLM Landscape in Enterprise Environments</h2>
+                        <p class="text-sm text-txt mb-6 flex-1">A comprehensive guide to securely integrating Large Language Models into proprietary data stacks without compromising governance...</p>
+                        <div class="flex items-center justify-between border-t border-tertiary pt-4 mt-auto">
+                            <div class="flex items-center gap-2">
+                                <div class="w-6 h-6 rounded-full bg-accent text-primary flex items-center justify-center text-xs font-bold">JD</div>
+                                <span class="text-xs text-txt-light">John Doe</span>
+                            </div>
+                            <a href="#" class="text-xs text-accent hover:underline">Read Article</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-secondary rounded-lg overflow-hidden border border-tertiary hover-lift flex flex-col">
+                    <div class="h-48 bg-primary relative border-b border-tertiary flex items-center justify-center">
+                        <i class="ph ph-chart-line-up text-6xl text-accent opacity-50"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs text-accent font-mono">Engineering</span>
+                            <span class="text-xs text-txt">March 28, 2026</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-txt-light mb-3 hover:text-accent cursor-pointer transition">Optimizing Event-Driven Architectures for Real-Time BI</h2>
+                        <p class="text-sm text-txt mb-6 flex-1">How migrating from batch processing to Apache Kafka enabled sub-second reporting visualizations for our retail clients...</p>
+                        <div class="flex items-center justify-between border-t border-tertiary pt-4 mt-auto">
+                            <div class="flex items-center gap-2">
+                                <div class="w-6 h-6 rounded-full bg-accent text-primary flex items-center justify-center text-xs font-bold">AS</div>
+                                <span class="text-xs text-txt-light">Alice Smith</span>
+                            </div>
+                            <a href="#" class="text-xs text-accent hover:underline">Read Article</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-secondary rounded-lg overflow-hidden border border-tertiary hover-lift flex flex-col">
+                    <div class="h-48 bg-primary relative border-b border-tertiary flex items-center justify-center">
+                        <i class="ph ph-shield-check text-6xl text-accent opacity-50"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs text-accent font-mono">AI Research</span>
+                            <span class="text-xs text-txt">March 15, 2026</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-txt-light mb-3 hover:text-accent cursor-pointer transition">The Critical Role of Explainable AI (XAI) in Regulated Industries</h2>
+                        <p class="text-sm text-txt mb-6 flex-1">With increased scrutiny in healthcare and finance, delivering models that can explain their own predictions is no longer optional...</p>
+                        <div class="flex items-center justify-between border-t border-tertiary pt-4 mt-auto">
+                            <div class="flex items-center gap-2">
+                                <div class="w-6 h-6 rounded-full bg-accent text-primary flex items-center justify-center text-xs font-bold">MR</div>
+                                <span class="text-xs text-txt-light">Mark Ruffalo</span>
+                            </div>
+                            <a href="#" class="text-xs text-accent hover:underline">Read Article</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Dtuned Insight</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#0A192F', secondary: '#112240', tertiary: '#233554', accent: '#64FFDA', txt: '#8892B0', 'txt-light': '#CCD6F6' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-primary text-txt antialiased font-sans">
+    
+    <!-- Navbar Setup -->
+    <nav class="fixed w-full z-50 bg-primary/95 backdrop-blur shadow-md py-4 border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4"><div class="flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-accent">Dtuned<span class="text-txt-light">Insight</span></a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-txt-light hover:text-accent text-sm">Home</a>
+                <a href="services.html" class="text-txt-light hover:text-accent text-sm">Services</a>
+                <a href="projects.html" class="text-accent text-sm">Projects</a>
+                <a href="contact.html" class="px-5 py-2 border border-accent text-accent rounded hover:bg-accent hover:text-primary text-sm">Contact Us</a>
+            </div>
+            </div></div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-40 pb-20 bg-secondary border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-txt-light mb-4">Case Studies</h1>
+            <p class="text-lg text-txt max-w-2xl mx-auto">Real-world applications of our data expertise.</p>
+        </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="py-24 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+                
+                <!-- Project Card -->
+                <div class="group border border-tertiary rounded-lg overflow-hidden hover-lift bg-secondary">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/project_thumbnail_1775205838799.png" alt="Project 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-primary opacity-40 group-hover:opacity-10 transition"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex gap-2 mb-4 text-xs font-mono text-accent">
+                            <span>FinTech</span> <span>•</span> <span>Predictive Analytics</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-txt-light mb-4 group-hover:text-accent transition">Fraud Detection at Scale</h3>
+                        <p class="text-txt mb-6 text-sm leading-relaxed">
+                            Deployed a real-time predictive model for a leading payment gateway, processing 10k+ TPS and reducing false positives by 38% within the first quarter.
+                        </p>
+                        <div class="mb-6 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-tertiary text-txt-light text-xs rounded">XGBoost</span>
+                            <span class="px-3 py-1 bg-tertiary text-txt-light text-xs rounded">AWS SageMaker</span>
+                            <span class="px-3 py-1 bg-tertiary text-txt-light text-xs rounded">Kafka</span>
+                        </div>
+                        <a href="#" class="text-accent underline text-sm hover:text-white">View Full Case Study</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="group border border-tertiary rounded-lg overflow-hidden hover-lift bg-secondary">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/service_predictive_1775205789223.png" alt="Project 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex gap-2 mb-4 text-xs font-mono text-accent">
+                            <span>Retail</span> <span>•</span> <span>Supply Chain</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-txt-light mb-4 group-hover:text-accent transition">Inventory Optimization</h3>
+                        <p class="text-txt mb-6 text-sm leading-relaxed">
+                            Overhauled legacy inventory systems with dynamic forecasting, ensuring 99.8% stock availability during peak seasons while reducing holding costs by 15%.
+                        </p>
+                        <div class="mb-6 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-tertiary text-txt-light text-xs rounded">Python</span>
+                            <span class="px-3 py-1 bg-tertiary text-txt-light text-xs rounded">Prophet</span>
+                            <span class="px-3 py-1 bg-tertiary text-txt-light text-xs rounded">Snowflake</span>
+                        </div>
+                        <a href="#" class="text-accent underline text-sm hover:text-white">View Full Case Study</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- CMS Note -->
+            <div class="mt-16 p-6 border border-accent bg-accent/5 rounded-lg text-center">
+                <i class="ph ph-info text-3xl text-accent mb-2"></i>
+                <h4 class="text-txt-light font-bold mb-2">CMS Integration Ready</h4>
+                <p class="text-txt text-sm">This grid is structurally built to integrate seamlessly with Strapi, Contentful, or standard static generation pipelines for dynamic updates via your preferred no-code dashboard.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

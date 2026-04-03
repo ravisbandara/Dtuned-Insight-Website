@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Dtuned Insight</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#0A192F', secondary: '#112240', tertiary: '#233554', accent: '#64FFDA', txt: '#8892B0', 'txt-light': '#CCD6F6' }, fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-primary text-txt antialiased font-sans">
+    
+    <nav class="fixed w-full z-50 bg-primary/95 backdrop-blur shadow-md py-4 border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4"><div class="flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-accent">Dtuned<span class="text-txt-light">Insight</span></a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-txt-light hover:text-accent text-sm">Home</a>
+                <a href="about.html" class="text-accent text-sm">About</a>
+                <a href="contact.html" class="px-5 py-2 border border-accent text-accent rounded hover:bg-accent text-sm">Contact</a>
+            </div>
+        </div></div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-40 pb-20 bg-secondary border-b border-tertiary">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-txt-light mb-4">About Us</h1>
+            <p class="text-lg text-txt max-w-2xl mx-auto">Engineering intelligent solutions to redefine how businesses interact with data.</p>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="py-24 bg-primary border-b border-tertiary">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <i class="ph ph-target text-5xl text-accent mb-6 inline-block"></i>
+            <h2 class="text-3xl font-bold text-txt-light mb-6">Our Mission</h2>
+            <p class="text-xl leading-relaxed text-txt">
+                To democratize advanced data science capabilities for enterprises. We believe that true operational excellence is achieved only when complex algorithms are made accessible, interpretable, and directly aligned with strategic business goals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="py-24 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-txt-light mb-16">Meet The Leadership</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member -->
+                <div class="text-center group">
+                    <div class="w-48 h-48 mx-auto rounded-full bg-primary border-4 border-tertiary flex items-center justify-center mb-6 overflow-hidden relative transition duration-300 group-hover:border-accent">
+                        <i class="ph ph-user text-6xl text-txt opacity-30"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-txt-light">Alan Turing</h3>
+                    <p class="text-accent text-sm mb-3">CEO & Founder</p>
+                    <a href="#" class="inline-block text-txt hover:text-accent"><i class="ph ph-linkedin-logo text-2xl"></i></a>
+                </div>
+
+                <!-- Team Member -->
+                <div class="text-center group">
+                    <div class="w-48 h-48 mx-auto rounded-full bg-primary border-4 border-tertiary flex items-center justify-center mb-6 overflow-hidden relative transition duration-300 group-hover:border-accent">
+                        <i class="ph ph-user text-6xl text-txt opacity-30"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-txt-light">Grace Hopper</h3>
+                    <p class="text-accent text-sm mb-3">Chief Data Officer</p>
+                    <a href="#" class="inline-block text-txt hover:text-accent"><i class="ph ph-linkedin-logo text-2xl"></i></a>
+                </div>
+
+                 <!-- Team Member -->
+                 <div class="text-center group">
+                    <div class="w-48 h-48 mx-auto rounded-full bg-primary border-4 border-tertiary flex items-center justify-center mb-6 overflow-hidden relative transition duration-300 group-hover:border-accent">
+                        <i class="ph ph-user text-6xl text-txt opacity-30"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-txt-light">Ada Lovelace</h3>
+                    <p class="text-accent text-sm mb-3">Head of Machine Learning</p>
+                    <a href="#" class="inline-block text-txt hover:text-accent"><i class="ph ph-linkedin-logo text-2xl"></i></a>
+                </div>
+
+                 <!-- Team Member -->
+                 <div class="text-center group">
+                    <div class="w-48 h-48 mx-auto rounded-full bg-primary border-4 border-tertiary flex items-center justify-center mb-6 overflow-hidden relative transition duration-300 group-hover:border-accent">
+                        <i class="ph ph-user text-6xl text-txt opacity-30"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-txt-light">John von Neumann</h3>
+                    <p class="text-accent text-sm mb-3">Lead Architect</p>
+                    <a href="#" class="inline-block text-txt hover:text-accent"><i class="ph ph-linkedin-logo text-2xl"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
